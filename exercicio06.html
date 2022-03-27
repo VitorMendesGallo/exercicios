@@ -1,0 +1,8 @@
+<script>
+    const salarioMensal = parseFloat(prompt("Digite o salário mensal de um funcionário:"));
+    const percentualDeReajuste = parseFloat(prompt("Digite o percentual de reajuste: "));
+    const valorDoReajuste = salarioMensal * (percentualDeReajuste / 100);
+    const novoSalario = salarioMensal + valorDoReajuste;
+
+    document.write(`<h1>O novo salário do funcionário é de : R$${novoSalario}</h1>`);
+</script>

@@ -1,0 +1,9 @@
+<script>
+    const custoDeFabrica = parseFloat(prompt("Digite o custo de fábrica do carro:"));
+    const valorDosImpostos = custoDeFabrica * 0.45;
+    const valorDoDistribuidor = custoDeFabrica * 0.28;
+    const custoFinal = custoDeFabrica + valorDosImpostos + valorDoDistribuidor;
+
+    document.write(`<h1>O custo final ao consumidor é de : R$${custoFinal}</h1>`);
+
+</script>

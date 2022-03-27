@@ -1,0 +1,12 @@
+<script>
+    let valor = prompt("Quantas maçãs você dejesa comprar?");
+    let macas = parseFloat(valor);
+
+    if (macas < 12) {
+        let total = macas * 1.30;
+        document.write("O custo total da compra foi de R$" + total);
+    } else {
+        let total = macas * 1;
+        document.write("O custo total da compra foi de R$" + total);
+    };
+</script>
