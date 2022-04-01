@@ -1,0 +1,28 @@
+<script>
+  //Sexo: masculino,feminino
+  //Condição Especial: gestante, deficiente físico
+
+  let idade = 21;
+  let sexo = "masculino";
+  let condicaoEspecial = "";
+
+  if (sexo == "masculino") {
+    if (idade >= 60 || condicaoEspecial == "deficiente físico") {
+      console.log("Fila Preferencial");
+    } else {
+      console.log("Sem Fila Preferencial");
+    }
+  } else if (sexo == "feminino") {
+    if (
+      idade >= 60 ||
+      condicaoEspecial == "deficiente físico" ||
+      condicaoEspecial == "gestante"
+    ) {
+      console.log("Fila Preferencial");
+    } else {
+      console.log("Sem Fila Preferencial");
+    }
+  } else {
+    console.log("Dados Inválidos");
+  }
+</script>
