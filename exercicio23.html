@@ -1,0 +1,29 @@
+<script>
+  function veririficaNumeroPerfeito(numero) {
+    let soma = 0;
+    for (let i = 1; i < numero; i++) {
+      if (numero % i == 0) {
+        soma += i;
+      }
+    }
+
+    if (soma == numero) {
+      return "É um número perfeito!";
+    } else {
+      return "Não é um número perfeito!";
+    }
+  }
+
+  function imprimeNumerosPerfeitosAteN(n) {
+    let numerosPerfeitosAteN = [];
+    for (let i = 2; i <= n; i++) {
+      if (veririficaNumeroPerfeito(i) == "É um número perfeito!") {
+        numerosPerfeitosAteN.push(i);
+      }
+    }
+    return numerosPerfeitosAteN;
+  }
+
+  console.log(veririficaNumeroPerfeito(8128));
+  console.log(imprimeNumerosPerfeitosAteN(8128));
+</script>

@@ -1,0 +1,14 @@
+<script>
+  let valor = parseFloat(prompt("Digite um valor:"));
+  let taxaImposto = parseFloat(prompt("Digite o valor do imposto:"));
+
+  function calculaImposto(valor, taxaImposto) {
+    if (isNaN(valor) || isNaN(taxaImposto)) {
+      alert("Dados Inválidos!");
+    } else {
+      document.write(`<strong>${valor + valor * (taxaImposto / 100)}</strong>`);
+    }
+  }
+
+  calculaImposto(valor, taxaImposto);
+</script>

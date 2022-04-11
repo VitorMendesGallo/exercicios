@@ -1,0 +1,38 @@
+<script>
+  function veririficaNumeroPrimo(numero) {
+    if (numero <= 10) {
+      switch (numero) {
+        case 2:
+        case 3:
+        case 5:
+        case 7:
+          return "Primo";
+          break;
+        default:
+          return "Não é Primo";
+      }
+    } else if (
+      numero % 2 != 0 &&
+      numero % 3 != 0 &&
+      numero % 5 != 0 &&
+      numero % 7 != 0
+    ) {
+      return "Primo";
+    } else {
+      return "Não é Primo";
+    }
+  }
+
+  function imprimeNumerosPrimosAteN(n) {
+    let numerosPrimosAteN = [];
+    for (let i = 1; i <= n; i++) {
+      if (veririficaNumeroPrimo(i) == "Primo") {
+        numerosPrimosAteN.push(i);
+      }
+    }
+    return numerosPrimosAteN;
+  }
+
+  console.log(veririficaNumeroPrimo(27));
+  console.log(imprimeNumerosPrimosAteN(89));
+</script>
