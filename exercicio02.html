@@ -1,11 +1,11 @@
 <script>
-    let valor = prompt("Digite um número:");
-    let valorNumerico = parseFloat(valor);
+  let numero = parseFloat(
+    prompt("Digite um número para saber se é maior que 10: ")
+  );
 
-    if (valorNumerico <= 10) {
-        document.write("NÃO É MAIOR QUE 10 !");
-    } else {
-        document.write("É MAIOR QUE 10 !");
-    };
-
+  if (numero > 10) {
+    document.write("<h1>É MAIOR QUE 10!</h1>");
+  } else {
+    document.write("<h1>NÃO É MAIOR QUE 10!</h1>");
+  }
 </script>

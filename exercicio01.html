@@ -1,7 +1,7 @@
 <script>
-    let valor = prompt("Digite um valor:");
-    let valorNumerico = parseFloat(valor);
-    let antecessor = valorNumerico - 1;
+  let numero = parseFloat(
+    prompt("Digite um numero para saber o seu antecessor:")
+  );
 
-    document.write("O antecessor de " + valorNumerico + " é " + antecessor);
+  document.write(`<h1>O antecessor de ${numero} é ${numero - 1}</h1>`);
 </script>

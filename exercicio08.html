@@ -1,7 +1,9 @@
 <script>
-
-    const grausFahrenheit = parseFloat(prompt("Digite um valor em graus Fahrenheit:"));
-    const grausCelsius = (5 * grausFahrenheit - 160) / 9;
-    document.write(`<h1>A temperatura em graus Celsius é de ${grausCelsius.toFixed(0)}°C </h1>`);
-
+  let grausFahrenheit = parseFloat(
+    prompt("Digite um valor em graus Fahrenheit:")
+  );
+  let grausCelsius = (5 * grausFahrenheit - 160) / 9;
+  document.write(
+    `<h1>A temperatura em graus Celsius é de ${grausCelsius.toFixed(2)}°C </h1>`
+  );
 </script>

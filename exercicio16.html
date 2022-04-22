@@ -1,13 +1,23 @@
 <script>
-  let lado1 = 45;
-  let lado2 = 45;
-  let lado3 = 45;
+  let ladoA = parseFloat(
+    prompt("Digite o tamanho do lado A de um triângulo: ")
+  );
+  let ladoB = parseFloat(
+    prompt("Digite o tamanho do lado B de um triângulo: ")
+  );
+  let ladoC = parseFloat(
+    prompt("Digite o tamanho do lado C de um triângulo: ")
+  );
 
-  if (lado1 == lado2 && lado2 == lado3) {
-    console.log("Equilátero");
-  } else if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3) {
-    console.log("Isósceles");
+  if (ladoA + ladoB > ladoC && ladoA + ladoC > ladoB && ladoB + ladoC > ladoA) {
+    if (ladoA == ladoB && ladoA == ladoC) {
+      document.write("<h1>Triângulo Equilátero</h1>");
+    } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+      document.write("<h1>Isósceles</h1>");
+    } else {
+      document.write("<h1>Escaleno</h1>");
+    }
   } else {
-    console.log("Escaleno");
+    document.write("<h1>Não é possível formar um triângulo com essas medidas!</h1>");
   }
 </script>

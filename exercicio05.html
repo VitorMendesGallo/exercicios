@@ -1,19 +1,16 @@
 <script>
-    let anoAtual = prompt("Em que ano estamos?");
-    let anoNascimento = prompt("Em que ano você nasceu ?");
+  let anoAtual = parseFloat(prompt("Digite o ano atual:"));
+  let anoNascimento = parseFloat(prompt("Digite o ano que você nasceu:"));
 
-    let ano = parseFloat(anoAtual);
-    let nascimento = parseFloat(anoNascimento);
+  let idade = anoAtual - anoNascimento;
 
-    let idade = ano - nascimento;
-
-    if (idade < 16) {
-        document.write("Você não pode votar esse ano.");
-    } else if (idade < 18) {
-        document.write("Você não precisa votar esse ano se você não quiser.");
-    } else if (idade < 70) {
-        document.write("Você precisa votar esse ano.");
-    } else {
-        document.write("Você não precisa votar esse ano se você não quiser.");
-    };
+  if (idade < 16) {
+    document.write("Você não pode votar esse ano.");
+  } else if (idade < 18) {
+    document.write("Você não precisa votar esse ano se você não quiser.");
+  } else if (idade < 70) {
+    document.write("Você precisa votar esse ano.");
+  } else {
+    document.write("Você não precisa votar esse ano se você não quiser.");
+  }
 </script>

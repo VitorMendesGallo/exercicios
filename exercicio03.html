@@ -1,10 +1,10 @@
 <script>
-    let valor = prompt("Digite um número:");
-    let valorNumerico = parseFloat(valor);
-
-    if (valorNumerico < 0) {
-        document.write("O VALOR DIGITADO É NEGATIVO!");
-    } else {
-        document.write("O VALOR DIGITADO É POSITIVO!");
-    };
+  let numero = parseFloat(
+    prompt("Digite um número para saber se é positivo ou negativo: ")
+  );
+  if (numero < 0) {
+    document.write("<h1>O VALOR DIGITADO É NEGATIVO!</h1>");
+  } else {
+    document.write("<h1>O VALOR DIGITADO É POSITIVO!</h1>");
+  }
 </script>
